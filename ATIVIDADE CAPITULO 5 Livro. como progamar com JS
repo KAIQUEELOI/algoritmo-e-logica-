@@ -1,0 +1,304 @@
+//* 1 tividade //
+const entradaA = prompt("digite um valor:");
+const valor1 = (entradaA);
+
+
+if (entradaA % 2 === 0){
+    console.log("o numero é par!");
+} else {
+    console.log("o numero é impar");
+}
+
+
+
+
+
+
+//2 atividade//
+
+
+
+
+const entrada1 = prompt("digite o primeiro numero:");
+const entrada2 = prompt("digite o segundo valor:");
+const entrada3 = prompt("digite o terceiro valor:");
+
+
+const num1 = Number(entrada1);
+const num2 = Number(entrada2);
+const num3 = Number(entrada3);
+
+
+if( num1 > num2,num3){
+console.log("o maior numero é:",num1 );
+} else if
+    (num2 > num1,num3){
+        console.log("o maior numero é:", num2);
+} else if (
+num3 > num1,num2){
+    console.log("o maiorn numero é:",num3);
+}
+
+
+
+
+
+
+//* 3 atividade //
+const entrada4 = prompt("digite a 1 nota =>");
+const entrada5 = prompt("digite a 2 nota =>");
+const entrada6 = prompt("digite a 3 nota =>");
+
+
+const n1 = Number(entrada4);
+const n2 = Number(entrada5);
+const n3 = Number(entrada6);
+
+
+const media1 = (n1 + n2 + n3)/3
+
+
+if (media >= 7){
+    console.log("PARABÉNS VOCE FOI APROVADO");
+} else {
+    console.log("VOCE FOI REPROVADPO (´-´) ");
+}
+
+
+//* 3 atividade //
+const entrada4 = prompt("digite a 1 nota =>");
+const entrada5 = prompt("digite a 2 nota =>");
+const entrada6 = prompt("digite a 3 nota =>");
+
+
+const n1 = Number(entrada4);
+const n2 = Number(entrada5);
+const n3 = Number(entrada6);
+
+
+const media1 = (n1 + n2 + n3)/3
+
+
+if ( media1 >= 7){
+    console.log("PARABÉNS VOCE FOI APROVADO");
+} else {
+    console.log("VOCE FOI REPROVADPO (´-´) ");
+}
+
+
+
+
+// 4 atividade//
+
+
+const entrada7 = prompt("digite a sua data de nascimento:");
+const nasci = toString(entrada7);
+
+
+const idade = 2025 - nasci;
+
+
+if(idade >= 18){
+    console.log("voce jae maior de idade [] ")
+} else(
+    console.log("voce é menor de idade ")
+)
+// 5 atividade //
+const entrada8 = prompt("digite: 1 para Celcius => Faherenheit e 2 para Fahrenheit => Celcius");
+const escolha = Number(entrada8) ;
+const entrada9 = prompt("digite a temperatura que voce deseja converter =>>");
+const temp =Number(entrada9);
+
+
+const conver1= temp + 273
+const conver2= temp - 273
+
+
+if (escolha === 1)
+{
+    console.log("sua nova temperatura é", conver1,"F");
+} else {
+    console.log("sua nova temperatura é", conver2,"C");
+}
+// 6 atividade //
+const entrada10 = prompt("digite o 1 numero:");
+const entrada11 = prompt("digite o 2 numero:");
+
+
+const n1= Number(entrada10);
+const n2 = Number(entrada11);
+
+
+if( n1 % n2 === 0 || num2 % num1 === 0 ) {
+    console.log("esses numeros são multiplos");
+} else {
+    console.log("esses numeros NÃO são multiplos");
+}
+
+
+
+
+// 7 atividade //
+const entrada12 = prompt("digite o 1 lado do triangulo");
+const entrada13 = prompt("digite o 2 lado do triangulo");
+const entrada14 = prompt("digite o 3 lado do triangulo");
+
+
+const l1=Number(entrada12);
+const l2=Number(entrada13);
+const l3=Number(entrada14);
+
+
+if( l1 == l2 == l3){
+    console.log("o triangulo é EQUILATERO");
+} else if (l1 == l2 != l3 ){
+    console.log("o triangulo é ISOCELES ");
+} else if( l1 != l2 != l3){
+    console.log("o triangulo é ESCALENO");
+
+
+}
+
+
+// 7 atividade //
+const entrada12 = prompt("digite o 1 lado do triangulo");
+const entrada13 = prompt("digite o 2 lado do triangulo");
+const entrada14 = prompt("digite o 3 lado do triangulo");
+
+
+const l1=Number(entrada12);
+const l2=Number(entrada13);
+const l3=Number(entrada14);
+
+
+if( l1 == l2 == l3){
+    console.log("o triangulo é EQUILATERO");
+} else if (l1 == l2 || l2 == l3 ){
+    console.log("o triangulo é ISOCELES ");
+} else if( l1 != l2 != l3){
+    console.log("o triangulo é ESCALENO");
+
+
+}
+
+
+
+
+
+
+// 8 atividade //
+
+
+ const entrada15 = prompt("Escolha um prato PIZZA;FEIJOADA;CHURRASCO");
+
+
+ const P1 = Number(entrada15) ;
+
+
+switch(entrada15){
+ case "PIZZA":
+    console.log("pizza = 35$");
+    console.log("pizza feita com ingredientes frescos e de alata qualidade");
+break;
+
+
+case " FEIJOADA":
+    console.log("FEIJOADA = 19,90$");
+    console.log("feijoada com linguiça,pedaços de porco,torresmo,farofa,arroz..");
+    break
+
+
+    case "CHURRASCO":
+        console.log("RODIZIO DE CHURRASCO = 37,90$");
+        console.log("carnes de alto nivel e de varias variedades para atender o gosto de todos");
+        break
+}
+
+
+//9 atividade //
+const entrada16 = prompt("digite sua idade:");
+const entrada17 = prompt("digite seu altura:");
+const entrada18 = prompt("digite seu peso:");
+
+
+const idade = Number(entrada16);
+const altura = Number(entrada17);
+const peso = Number(entrada18);
+
+
+const IMC = peso/idade*altura;
+
+
+if( IMC < 18 ){
+    console.log("classificaçao= MAGREZA");
+} else if (   18,5 <= IMC <= 24,9){
+    console.log("classificção= NORMAL");
+} else if ( 30 <= IMC <= 34,9 ){
+    console.log("classificaçao= OBESIDADE 1");
+} else if ( 35 <= IMC <= 39,9){
+    console.log(" classificaçao: OBESIDADE 2");
+} else if ( IMC >= 40){
+    console.log("classificaçao= OBESIDADE 3");
+}
+
+
+
+
+
+
+//10 atividade //
+const entrada19= parseInt(prompt("escreva um numero natural >0 "));
+
+
+const M = (entrada19);
+
+
+let contador = 0;
+
+
+
+
+while (contador <= M ){
+    if(contador % 2 === 0 ){
+  console.log(contador);}
+   contador++;
+}
+
+
+//11 atividade //
+const entrada19= parseInt(prompt("escreva um numero natural >0 "));
+
+
+const M = (entrada19);
+
+
+let contador = 0;
+
+
+
+
+while (contador <= M ){
+    if(contador % 2 === 1 ){
+  console.log(contador);}
+   contador++;
+}
+
+
+
+
+
+
+//12 atividade //
+const entrada19= parseInt(prompt("escreva um numero natural >0 "));
+
+
+const F = (entrada19);
+let fatorial =1;
+
+
+if(F>= 0){
+    for(let i=1; i<=F; i++){
+        fatorial *=i;
+    }
+    console.log("o fatorial do seu numero é:", + fatorial );
+}
