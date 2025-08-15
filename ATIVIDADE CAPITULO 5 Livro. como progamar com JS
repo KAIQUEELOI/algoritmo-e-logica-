@@ -9,15 +9,7 @@ if (entradaA % 2 === 0){
     console.log("o numero é impar");
 }
 
-
-
-
-
-
 //2 atividade//
-
-
-
 
 const entrada1 = prompt("digite o primeiro numero:");
 const entrada2 = prompt("digite o segundo valor:");
@@ -282,8 +274,6 @@ while (contador <= M ){
   console.log(contador);}
    contador++;
 }
-
-
 
 
 
