@@ -1,0 +1,315 @@
+ //1002//
+    export function problem (lines){
+     const raio = Number(lines[0])
+     const pi = 3.14159
+
+     const area = pi * raio ** 2
+
+     console.log(`A=${area}`)
+
+    }
+
+    //1035//
+    export function problem (lines){
+        const A = Number(lines[0])
+        const B = Number(lines[1])
+        const C = Number(lines[2])
+        const D = Number(lines[3])
+
+        if ( B > C && D > A && C + D > A + B && C > 0 && D > 0&& A % 2 ===0){
+            console.log("Valores aceitos")
+        }
+        else{
+            console.log("Vlaores nao aceitos")
+        }
+
+        }
+
+        //1044//
+        export function problem (lines){
+            const A = Number(lines[0])
+            const B = Number(lines [1])
+
+            if ( A % B == 0 || B % A == 0 ){
+                console.log("SAO MULTIPLOS!")
+            }  else{
+                console.log("NAO SAO MULTIPLOS!")
+            }
+
+
+        }
+        //1046//
+        export function problem (lines){
+            const hora1 = Number(lines [0])
+            const hora2 = Number(lines[1])
+
+            const duraçao = hora2 - hora1
+
+            console.log("O JOGO DUROU ", duraçao , " HORA(S).")
+
+
+        }
+
+
+        //1048//
+        export function problem (lines){
+            const  valor =Number(lines[0])
+            let percentual;
+            
+            if( valor <= 400){
+              percentual = 15;
+
+        } else if (valor > 400 && valor <= 800){
+            percentual = 12;
+        } else if (valor > 800  && valor <= 1200){
+            percentual = 10;
+        } else if ( valor > 1200 && valor <=2000){
+            percentual = 7;
+        }
+        else {
+            percentual = 4;
+        }
+          const aumento = valor + (valor * percentual/100);
+          const novoSalario = valor + aumento;
+
+          console.log(`aumento`, ${aumento} );
+          console.log(`percentual:", ${ percentual} % `);
+          console.log("novo salario:", ${novoSalario});
+    
+
+    }
+    //1038//
+var input = require("fs").readFileSync("/dev/stdin", "utf8");
+var lines = input.split(" ");
+
+let codigo = parseInt(lines[0]); 
+let quantidade = parseInt(lines[1]);
+
+let preco;
+
+if (codigo === 1) {
+    preco = 4.00;
+} else if (codigo === 2) {
+    preco = 4.50;
+} else if (codigo === 3) {
+    preco = 5.00;
+} else if (codigo === 4) {
+    preco = 2.00;
+} else if (codigo === 5) {
+    preco = 1.50;
+}
+
+let total = preco * quantidade;
+
+console.log("Total: R$ " + total.toFixed(2));
+
+//1050//
+   let ddd = parseInt(lines[0]);
+
+if (ddd === 61) {
+    console.log("Brasilia");
+} else if (ddd === 71) {
+    console.log("Salvador");
+} else if (ddd === 11) {
+    console.log("Sao Paulo");
+} else if (ddd === 21) {
+    console.log("Rio de Janeiro");
+} else if (ddd === 32) {
+    console.log("Juiz de Fora");
+} else if (ddd === 19) {
+    console.log("Campinas");
+} else if (ddd === 27) {
+    console.log("Vitoria");
+} else if (ddd === 31) {
+    console.log("Belo Horizonte");
+} else {
+    console.log("DDD nao cadastrado");
+}
+
+//1070//
+
+let numero = parseInt(lines[0]);
+let contador = 0; 
+
+while( contador < 6){
+    if ( numero % 2 !== 0){
+        console.log(numero);
+        contador++;
+    }
+    numero++;
+
+}
+
+//1073//
+
+     const valor = Number(lines[0]);
+
+     for (let i = 2; i <= valor ; i += 2){
+        const quadrado = i * i;
+        console.log(`${i}^2 = ${quadrado}`)
+     }
+
+//1078//
+
+const N = Number(lines[0]) 
+
+for( let i =1; i <= 10; i++){
+    console.log(`${i} x ${N} = ${ i * N}`)
+}
+
+//1114//
+
+const senha = lines[0];
+let n1 = 0;
+while(lines[n1] !== "2002"){
+    console.log("Senha Invalida");
+    n1++;
+}
+console.log("Acesso Permitido");
+
+//1115//
+
+lines.forEach( line => {
+    
+const [X,Y] = line.split(' ').map(Number)
+if(X ===0 || Y ===0){
+    return
+}
+else if( X > 0 && Y > 0){
+    console.log("primeiro")
+} else if ( X < 0 && Y > 0){
+    console.log("segundo")
+} else if ( X < 0 && Y < 0){
+    console.log("terceiro")
+} else if ( X > 0 && Y < 0){
+    console.log("quarto")
+}
+})
+
+//1134//
+let tipo = {
+1: 0,
+2: 0,
+3: 0
+}
+lines.forEach( numero => {
+    if (numero >= 1 && numero <= 3){
+        tipo[numero]++
+    }else if ( numero == 4 ){
+        return
+    }
+})
+
+    console.log("MUITO OBRIGADO")
+    console.log(`Alcool : ${tipo[1]}`)
+    console.log(`Gasolina: ${tipo[2]}`)
+    console.log(`Diesel: ${tipo[3]}`)
+
+
+//1021//
+
+const valor = Number(lines[0])
+
+//1040//
+const M1 = Number(lines[0])
+const M2 = Number(lines[1])
+const M3 = Number(lines[2])
+const M4 = Number(lines[3])
+
+media1 =
+media2
+media3
+media4
+
+mediatotal
+
+//1045//
+
+et [l1,l2,l3] = lines[0].split(' ').map(Number)
+
+let aux 
+if  (l1 < l2){
+    aux = l1 
+    l1 = l2
+    l2 = aux
+}
+if(l1 < l3){
+    aux = l1
+    l1 = l3
+    l3 = aux
+}
+if (l2 < l3){
+    aux = l2 
+    l2 = l3
+    l3 = aux
+}
+
+
+if (l1 >= l2 + l3){
+    console.log("NAO FORMA TRIANGULO")
+
+}
+else if ( l1^2 == l2^2 + l3^2){
+    console.log("TRIANGULO RETANGULO")
+}
+else if( l1^2 > l2^2 + l3^2){
+    console.log("TRIANGULO OBTUSANGULO")
+}
+else if( l1^2 < l2^2 + l3^2 ){
+    console.log("TRIANGULO ACUTANGULO")
+}else if(l1 == l2 == l3){
+    console.log("TRIANGULO EQUILATERO")
+} 
+else if (l1 == l2 || l1 == l3 || l2 == l3){
+    console.log("TRIANGULO ISOCELES")
+}
+
+//1047//
+const [h1,m1,h2,m2] = lines[0].split(' ').map(Number)
+
+const inicio = h1 * 60 + m1;
+const fim = h2 * 60 + m2;
+
+let duracaoTotalMinutos 
+
+if (fim > inicio){
+    //seja no mesmo dia//
+    duracaoTotalMinutos = fim - inicio
+}else{
+
+    duracaoTotalMinutos = (24 * 60 - inicio) + fim
+}
+
+const duracaoHoras = Math.floor(duracaoTotalMinutos/60)
+const duracaoMinutos = duracaoTotalMinutos % 60
+
+console.log(`O JOGO DUROU ${duracaoHoras} HORAS (S) E ${duracaoMinutos} MINUTOS (S)`)
+
+//1101//
+lines.forEach( line => {
+    const [m, n] = line.split(' ')
+                     .map(Number)
+                     .sort( ( a,b ) => a - b )
+   if (m <= 0 || n <= 0) return
+   let sequencia = []
+   let soma = 0
+   for( let numero = m; numero <= n ; numero++){
+    sequencia.push(numero)
+    soma += numero
+   }
+   console.log(`${sequencia.join(' ')} sum=${soma}`)
+})
+
+//1060//
+
+const T =  T >= 1 && T <= 3000
+
+//1828///
+
+
+//2059//
+
+//2313//
+
+
+//2670//
