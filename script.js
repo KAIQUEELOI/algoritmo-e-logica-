@@ -1,120 +1,327 @@
-// Multiplicação
-const n5 = 9;
-const n6 = 6;
-const mult = n5 * n6; 
-console.log(mult); 
-
-// Divisão
-const di1 = 144;
-const di2 = 12;
-const valo = di1 / di2;
-console.log(valo); 
+//01//
 
 
-// Resto 
-const r1 = 55;
-const r2 = 6;
-const r3 = r1 % r2; 
-console.log(r3); 
+    prompt                       // permite que o usuario possa interagir com o "sitema"
+    console.log(" alguma coisa") //utilizado para "mostrar" mensagens ao usuarios 
 
-// Incremento (
-let x = 10;
-x++;
-console.log(x); 
+//muitas das vezes pode montar sistemas para interaçao de usuario e maquina com o bun utilizando prompt e console.log
+
+parseInt         //transforma toda a "entrada/saida em numeros inteiros"
+parseFloat        //transforma toda a "entrada/saida em resultados verdadeior ou falso/"
+
+
+//02//
+
+
+//03//
+const d1 = parseFloat(prompt("Digite sua primeira nota:"));
+const d2 = parseFloat(prompt("Digite sua segunda nota:"));
+const d3 = parseFloat(prompt("Digite sua terceira nota:"));
+
+let media = (d1 + d2 + d3) / 3;
+
+console.log("Sua média é =>", media);
+alert("Sua média é => " + media.toFixed(2));
+
+//04//
+
+function A (){
+    24
+}
+function  B (){
+    8
+}
+
+const subtracao = function(A,B){
+    return A - B
+}
+
+
+//05//
+
+const m1 = parseFloat(prompt("Digite sua primeira nota:"));
+const m2 = parseFloat(prompt("Digite sua segunda nota:"));
+const m3 = parseFloat(prompt("Digite sua terceira nota:"));
+
+
+function nota (Media){
+
+   let Media = (m1 + m2 + m3)/3
+   return Media
+}
+
+let resultado = nota(Media)
+console.log("sua media é:", resultado )
+
+
+//006//
+
+const contador = parseInt(prompt("escreva um valor e descubra o valor de seu quadrado:"));
+
+function quadrado (n){
+    return n ** 2
+}
+
+let Resultado = quadrado(numero)
+
+console.log("o quadrado de seu numero é:", Resultado )
+
+//07//
+
+let idade = 17
+
+function somaIdade(n) {
+    let somaIdade = n + 10
+    return console.log("sua idade nova é:",somaIdade)
+}
+
+console.log("sua idade é:", idade)
+let idade2 = somaIdade(n)
+console.log("sua idade através da funçao é:",idade2);
+
+//08//
+ 
+ n = 20
+ let quadrador
+
+if (n >= 20){
+    quadrador = n + 4**2
+    console.log("seu valor é", quadrador);
+}
+
+console.log("acessando de fora", quadrador);
+
+
+
+
+
+//////////09///////////////
+//
+const d1 = parseFloat(prompt("Digite sua primeira nota:"));
+const d2 = parseFloat(prompt("Digite sua segunda nota:"));
+const d3 = parseFloat(prompt("Digite sua terceira nota:"));
+
+let media = (d1 + d2 + d3) / 3;
+
+console.log("Sua média é =>", media);
+alert("Sua média é => " + media.toFixed(2));
+
+//
+
+
 // 
-let y = 5;
-y--; 
-console.log(y); 
-// Desafio 8 
-const s1 = 5;
-const s2 = 10;
-const s3 = 3;
-const s4 = 2;
-let funcao8 = (s1 + s2 - s3) * s4;
-console.log(funcao8);
+const A = () => 24
+const B = () => 8
 
-// Desafio 9 
-const m1 = 8;
-const m2 = 7.5;
-const m3 = 10;
-let media = (m1 + m2 + m3) / 3; 
-console.log(media);
+const subtracao = (a, b) => a - b
 
-// Desafio 10 (correto)
-let a = 20;
-let b = 5;
-a += b; // a = 25
-a *= 2; // a = 50
-console.log(a); 
-
-// Verificação de igualdade (==)
-let igualdade = 10 == 7;
-console.log(igualdade); 
-
-// Verificação de igualdade (==) (nome da variável corrigido)
-let igualdade2 = 5 == 3;
-console.log(igualdade2); 
-
-let sete = 7 == '7'; // true (coerção de string para número)
-console.log(sete);
-
-// Desafio 14 (!== sem coerção de tipo)
-let dez = 10 !== '10'; 
-
-console.log(dez); // Resultado correto: true
-// 15. Avalie (5 > 3) && (8 < 10)
-console.log((5 > 3) && (8 < 10)); 
+console.log("Subtração:", subtracao(A(), B()))
 
 
-// 16. Avalie (5 < 3) || (8 === 8)
-console.log((5 < 3) || (8 === 8)); 
+// 
 
-// 17. Avalie !(7 > 2)
-console.log(!(7 > 2)); 
+const m1 = parseFloat(prompt("Digite sua primeira nota:"));
+const m2 = parseFloat(prompt("Digite sua segunda nota:"));
+const m3 = parseFloat(prompt("Digite sua terceira nota:"));
 
-// 18. Faça (4 + 3) * 2 e compare com 4 + 3 * 2
-console.log((4 + 3) * 2); 
-console.log(4 + 3 * 2);
+const nota = () => (m1 + m2 + m3) / 3
 
-// 19. Calcule o resultado de 2 ** 4
-console.log(2 ** 4);
-
-// 20. Avalie: ((10 + 2) / 2) ** 2
-console.log(((10 + 2) / 2) ** 2);
-
-// 21. Verifique se a soma de 4 + 4 é igual ao produto de 2 * 4
-console.log((4 + 4) === (2 * 4));
-
-// 22. Expressão com 3 membros que retorne false usando ==, !, &&
-console.log(!(5 == 5) && true);
-
-// 23. Expressão com 4 membros que retorne true usando ||, !==, números
-console.log((5 !== '5') || (10 > 5) || (3 < 2) || (7 === 7)); // true
-
-// 24. Calcule: 5 + 3 * 2 ** 2
-console.log(5 + 3 * 2 ** 2); // 17
+let resultado = nota()
+console.log("Sua média é:", resultado)
 
 
-// 25. Faça let r = 3; r += 2 * 4; e depois r /= 2
-let r = 3;
-r += 2 * 4; // r = 3 + 8 = 11
-r /= 2; // r = 11 / 2 = 5.5
-console.log(r); // 5.5
+//
 
-// 26. Crie strings nome = "Ana" e sobrenome = "Silva", e junte com espaço
-let nome = "Ana";
-let sobrenome = "Silva";
-console.log(nome + " " + sobrenome);
 
-// 27. Avalie: ("5" + 5) == 55
-console.log(("5" + 5) == 55); 
+const numero = parseInt(prompt("Escreva um valor e descubra o valor de seu quadrado:"));
 
-// 28. Teste: true && false || true
-console.log(true && false || true); 
+const quadrado = n => n ** 2
 
-// 29. Expressão com operadores aritméticos, comparação e lógica que resulte em true
-console.log((2 + 3) === 5 && 10 > 5); // true
+let Resultado = quadrado(numero)
+console.log("O quadrado do seu número é:", Resultado)
 
-// 30. Calcule o valor final da expressão e explique cada operação
-let resultado = (10 + 5 * 2) > (30 / 2) && !false;
-console.log(resultado); // true
+
+// 
+
+
+
+let idade = 17
+
+const somaIdade = n => n + 10
+
+console.log("Sua idade é:", idade)
+let idade2 = somaIdade(idade)
+console.log("Sua idade através da função é:", idade2)
+
+
+// 
+
+
+
+let n = 20
+let quadrador
+
+if (n >= 20) {
+    quadrador = (() => n + 4 ** 2)() // arrow function auto-executada
+    console.log("Seu valor é", quadrador)
+}
+
+console.log("Acessando de fora", quadrador)
+
+
+//10//
+
+function caucularMedia(M1, M2){
+    return M1 + M2/2 
+}
+
+const M1 = parseFloat(prompt("Digite o primeiro número:"));
+const M2 = parseFloat(prompt("Digite o segundo número:"));
+
+const Media = calcularMedia(M1, M2);
+
+console.log("A média é:", media);
+
+//11//
+
+
+function adicao(a, b) {
+    return a + b;
+}
+
+function subtracao(a, b) {
+    return a - b;
+}
+
+function multiplicacao(a, b) {
+    return a * b;
+}
+
+function divisao(a, b) {
+    if (b === 0) {
+        return "Erro: divisão por zero!";
+    }
+    return a / b;
+}
+
+
+function exibirResultado(operacao, resultado) {
+
+    console.log(`O resultado da ${operacao} é: ${resultado}`);
+
+    alert(`O resultado da ${operacao} é: ${resultado}`);
+}
+
+const n1 = parseFloat(prompt("Digite o primeiro número:"));
+const n2 = parseFloat(prompt("Digite o segundo número:"));
+const escolha = prompt("Escolha a operação: +, -, *, /");
+
+
+let resultado;
+
+switch (escolha) {
+    case "+":
+        resultado = adicao(n1, n2);
+        exibirResultado("adição", resultado);
+        break;
+    case "-":
+        resultado = subtracao(n1, n2);
+        exibirResultado("subtração", resultado);
+        break;
+    case "*":
+        resultado = multiplicacao(n1, n2);
+        exibirResultado("multiplicação", resultado);
+        break;
+    case "/":
+        resultado = divisao(n1, n2);
+        exibirResultado("divisão", resultado);
+        break;
+    default:
+        alert("Operação inválida!");
+}
+
+
+//12//
+
+const { peso, altura } = lerDados();
+const imc = calcularIMC(peso, altura);
+const classificacao = classificarIMC(imc);
+exibirResultado(imc, classificacao);
+
+
+function lerValor() {
+    return parseFloat(prompt("Digite o valor em Reais (R$):"));
+}
+
+function converterParaDolar(valorReais, taxaCambio) {
+    return valorReais / taxaCambio;
+}
+
+
+function exibirResultado(valorReais, valorDolar) {
+    console.log(`R$ ${valorReais.toFixed(2)} equivalem a US$ ${valorDolar.toFixed(2)}`);
+}
+
+const taxaCambio = 5.00; 
+const valorReais = lerValor();
+const valorDolar = converterParaDolar(valorReais, taxaCambio);
+exibirResultado(valorReais, valorDolar);
+
+
+function lerDados() {
+    const peso = parseFloat(prompt("Digite seu peso em kg:"));
+    const altura = parseFloat(prompt("Digite sua altura em metros (ex: 1.75):"));
+    return { peso, altura };
+}
+
+
+function calcularIMC(peso, altura) {
+    return peso / (altura * altura);
+}
+
+function classificarIMC(imc) {
+    if (imc < 18.5) {
+        return "Abaixo do peso";
+    } else if (imc < 25) {
+        return "Peso normal";
+    } else if (imc < 30) {
+        return "Sobrepeso";
+    } else {
+        return "Obesidade";
+    }
+}
+
+function exibirResultado(imc, classificacao) {
+    console.log(`Seu IMC é ${imc.toFixed(2)} - ${classificacao}`);
+
+    alert(`Seu IMC é ${imc.toFixed(2)} - ${classificacao}`);
+}
+
+
+//13//
+const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+
+// Pontuação inicial//
+let pontos = 100;
+let acertou = false;
+
+alert("🎮 Bem-vindo ao jogo de adivinhação!\n\nTente adivinhar o número secreto (1 a 100).\nVocê começa com 100 pontos.");
+
+// Laço do jogo//
+while (!acertou) {
+    let palpite = parseInt(prompt("Digite seu palpite (1 a 100):"));
+
+    // Se o jogador acertar//
+    if (palpite === numeroSecreto) {
+        acertou = true;
+        alert(`🎉 Parabéns! Você acertou o número secreto (${numeroSecreto}).\nSua pontuação final é: ${pontos} pontos.`);
+        console.log(`Jogador acertou! Número secreto = ${numeroSecreto}, Pontuação = ${pontos}`);
+    } else {
+        pontos--; // perde 1 ponto//
+        if (palpite > numeroSecreto) {
+            alert(`❌ Errado! O número secreto é MENOR que ${palpite}.\nPontuação atual: ${pontos}`);
+        } else {
+            alert(`❌ Errado! O número secreto é MAIOR que ${palpite}.\nPontuação atual: ${pontos}`);
+        }
+    }
+}
